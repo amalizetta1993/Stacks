@@ -73,12 +73,12 @@ class TestStack(unittest.TestCase):
         self.stack.clear_stack()         
         self.assertEqual(self.stack.size_stack(), 0)
         
-    def counter_int(self):
+    def test9_counter_int(self):
         self.stack.push(3)
         self.stack.push('test_data1')
         self.stack.push(1.5)
-        self.stack.push('1')
-        self.assertEqual(self.stack.counter_int(), 1)
+        self.stack.push(4)
+        self.assertEqual(self.stack.counter_int(), 2)
         self.stack.clear_stack()         
 
         
